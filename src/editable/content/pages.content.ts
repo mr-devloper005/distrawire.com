@@ -53,32 +53,32 @@ export const pagesContent = {
   },
   about: {
     badge: 'Our Story',
-    title: 'A calmer, clearer way to explore content.',
-    description: `${slot4BrandConfig.siteName} is built to make long-form reading, visual discovery, and supporting resources feel like one unified experience.`,
+    title: 'A premium destination for public-facing media distribution.',
+    description: `${slot4BrandConfig.siteName} is built to make release publishing, archive discovery, and media-ready storytelling feel like one unified experience.`,
     paragraphs: [
-      'Instead of splitting everything into disconnected pages, the platform keeps related content easy to move through and easy to understand.',
-      'Whether someone starts with an article, listing, image post, or resource page, they can continue exploring without losing context.',
+      'Instead of splitting distribution updates across disconnected pages, the platform keeps releases, supporting content, and discovery tools aligned in one consistent experience.',
+      'Whether someone arrives through a release, archive page, search result, or supporting profile, they can continue exploring without losing context.',
     ],
     values: [
       {
-        title: 'Reading-first experience',
-        description: 'We prioritize clarity, pacing, and structure so people can read, browse, and discover without noise.',
+        title: 'Presentation-first publishing',
+        description: 'We prioritize clarity, spacing, and trust-building structure so announcements look ready for public distribution.',
       },
       {
-        title: 'Connected content surfaces',
-        description: 'Articles, visual posts, listings, resources, and profiles stay connected so discovery feels natural across the site.',
+        title: 'Connected release surfaces',
+        description: 'Archive pages, supporting stories, profiles, and related content stay connected so discovery feels natural across the site.',
       },
       {
-        title: 'Simple and trustworthy',
-        description: 'We focus on clean navigation and clear page structure to help visitors find useful content faster.',
+        title: 'Clean and credible',
+        description: 'We focus on premium navigation and clear page structure to help visitors find useful information faster.',
       },
     ],
   },
   contact: {
     eyebrow: `Contact ${slot4BrandConfig.siteName}`,
-    title: 'A support page that matches the product, not a generic contact form.',
-    description: 'Tell us what you are trying to publish, fix, or launch. We will route it through the right lane instead of forcing every request into the same support bucket.',
-    formTitle: 'Send a message',
+    title: 'Talk to us about publishing, distribution, or your next release.',
+    description: 'Tell us what you are trying to launch, update, or improve. We will route it through the right lane instead of forcing every request into the same generic support flow.',
+    formTitle: 'Tell us what you need',
   },
 
   search: {
