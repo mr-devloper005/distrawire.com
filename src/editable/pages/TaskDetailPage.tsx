@@ -104,7 +104,6 @@ const mapSrcFor = (post: SitePost) => {
 
 export function TaskDetailView({ task, post, related, comments = [] }: { task: TaskKey; post: SitePost; related: SitePost[]; comments?: Array<{ id: string; name: string; comment: string; createdAt: string }> }) {
   const images = getImages(post)
-  const published = post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : ''
   const baseRoute = getTaskConfig(task)?.route || `/${task}`
   const website = getField(post, ['website', 'url', 'link', 'fileUrl', 'pdfUrl', 'documentUrl'])
   const phone = getField(post, ['phone', 'telephone', 'mobile'])
@@ -124,7 +123,6 @@ export function TaskDetailView({ task, post, related, comments = [] }: { task: T
                 <BackLink task={task} />
                 <div className="mt-8 flex flex-wrap items-center gap-3 text-[11px] font-black uppercase tracking-[0.16em] text-white/78">
                   <span className="rounded-full bg-white/14 px-3 py-2">{getEditableCategory(post)}</span>
-                  {published ? <time>{published}</time> : null}
                 </div>
                 <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] sm:text-6xl">{post.title}</h1>
               
@@ -209,7 +207,6 @@ function InfoRibbon({ task, post, role, address, price }: { task: TaskKey; post:
     role ? { label: 'Role', value: role } : null,
     address ? { label: 'Location', value: address } : null,
     price ? { label: 'Price', value: price } : null,
-    post.publishedAt ? { label: 'Published', value: new Date(post.publishedAt).toLocaleDateString() } : null,
   ].filter((item): item is { label: string; value: string } => Boolean(item))
 
   if (!items.length && task !== 'listing' && task !== 'classified') return null
